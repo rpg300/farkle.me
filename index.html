@@ -3,20 +3,12 @@
 <head>
 <link rel="stylesheet" href="css/site.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
 <script src="angular/app.js"></script>
 </head>
 <body>
 <div class="content" ng-controller="myController">
-	<input ng-model="hi" />
-	<input ng-model="hi" />
-		<input ng-model="hi" />
-	<input ng-model="hi" />
-		<input ng-model="hi" />
-	<input ng-model="hi" />
-		<input ng-model="hi" />
-	<input ng-model="hi" />
-	<button ng-click="hi='heyyyyyy'" ></button>
-	lorem ipsume daf daf dasf a salorem ipsume daf daf dasf a salorem ipsume daf daf dasf a salorem ipsume daf daf dasf a salorem ipsume daf daf dasf a salorem ipsume daf daf dasf a sa
+		<ng-view></ng-view>
 </div>
 </body>
 </html>
