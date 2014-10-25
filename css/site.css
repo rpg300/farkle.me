@@ -5,3 +5,28 @@ width:100%;
 		margin: auto;
 	width:75%;
 }
+.dice {
+background: url('../images/dice.png');
+background-size: 155px;
+width: 50px;
+height: 50px;
+
+}
+.dice1 {
+	background-position: 0px 0px;
+}
+.dice2 {
+background-position: -55px 0px;
+}
+.dice3 {
+background-position: -106px 0px;
+}
+.dice4 {
+background-position: 0px -54px;
+}
+.dice5 {
+background-position: -55px -54px;
+}
+.dice6 {
+background-position: -106px -54px;
+}

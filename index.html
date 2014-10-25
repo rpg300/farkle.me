@@ -5,10 +5,17 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
 <script src="angular/app.js"></script>
+<script src="angular/directives/dice.js"></script>
 </head>
 <body>
+<div>
+<a href="#settings">Settings</a>
+</div>
+<div>
+<a href="#game">Game</a>
+</div>
 <div class="content" ng-controller="myController">
-		<ng-view></ng-view>abc
+		<ng-view></ng-view>
 </div>
 </body>
 </html>

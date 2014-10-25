@@ -3,17 +3,7 @@ var appFarkle = angular.module('appFarkle', ['ngRoute']);
 appFarkle.controller("myController", function($scope){
 	$scope.bolSwitch = true;
 	$scope.changeRoute = function(bolSwitch){
-/*		switch(bolSwitch){
-			case true:
-					window.location.href = '#hey';
-			break;
-			case false:
-					window.location.href = '#heyyyy';
-			break;
-		}*/
-		/*window.location.href = '#' + bolSwitch;*/
-		window.location.href = '#game';
-			/*$scope.bolSwitch = !bolSwitch;*/
+		window.location.href = '#' + bolSwitch;
 	}
 });
 
@@ -22,6 +12,11 @@ appFarkle.config(['$routeProvider', '$locationProvider', function ($routeProvide
     {
 		templateUrl: "angular/partials/settings.html",
 		controller: "myController"
+    })
+        .when("/heyyyy",
+    {
+        templateUrl: "angular/partials/game.html",
+        controller: "myController"
     })
     .when("/game",
     {
@@ -32,12 +27,12 @@ appFarkle.config(['$routeProvider', '$locationProvider', function ($routeProvide
     {
         templateUrl: "angular/partials/MainMenu.html",
         controller: "myController"
-    })
-    .otherwise(
-    	{
-    		redirectTo: '/MainMenu'
-    	}
-    );
+    });
+/*.otherwise(
+        {
+            redirectTo: '/MainMenu'
+        }
+    );*/
 
      /*$locationProvider.html5Mode(true);*/
 
